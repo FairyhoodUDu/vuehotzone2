@@ -1,5 +1,5 @@
 {
-  "name": "vuehotzone2",
+  "name": "vue2hotzone",
   "version": "1.0.0",
   "description": "碰撞检测的热区组件",
   "private":false,
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/FairyhoodUDu/vue2hotzone.git"
   },
   "keywords": [
-    "vue hotzone"
+    "lpl521qx1314"
   ],
   "author": "lpl",
   "license": "MIT",
