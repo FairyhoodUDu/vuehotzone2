@@ -1,4 +1,4 @@
-# vue2hotzone
+# vuehotzone2
 
 ## Project setup
 ```
