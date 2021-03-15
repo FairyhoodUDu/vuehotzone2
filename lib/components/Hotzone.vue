@@ -53,7 +53,7 @@ export default {
       let { info, index } = res
       // 改变热区并发送change通知
       Object.assign(this.zones[index], info)
-      this.hasChange()
+      this.hasChange('changeInfo')
     },
     addItem (setting) {
       this.zones.push(setting)
@@ -77,17 +77,18 @@ export default {
     },
     removeItem (index = this.zones.length - 1) {
       this.zones.splice(index, 1)
-      this.hasChange()
+      this.hasChange('removeItem')
       this.$emit('remove', index)
     },
     changeItem (info, isAdd) {
       const index = this.zones.length - 1
       // 改变热区并发送change通知
       Object.assign(this.zones[index], info)
-      this.hasChange()
+      this.hasChange('changeItem')
       isAdd && this.$emit('add', this.zones[index])
     },
-    hasChange () {
+    hasChange (from) {
+      console.log(from);
       this.$emit('change', this.zones)
     }
   },
@@ -102,4 +103,9 @@ export default {
 
 <style scoped>
 @import '../assets/styles/main.css';
+
+
+
+
+
 </style>

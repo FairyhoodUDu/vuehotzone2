@@ -69,6 +69,7 @@
 .hz-m-wrap .hz-m-box .hz-u-close {
   top: 0;
   right: 0;
+  z-index: 10;
 }
 .hz-m-wrap .hz-m-box .hz-m-copy {
   display: inline-block;

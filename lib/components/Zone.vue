@@ -16,7 +16,7 @@
         title="删除该热区"
         v-show="!hideZone"
         class="hz-u-close hz-icon hz-icon-trash"
-        @click.stop="delItem(index)"
+        @click.stop.prevent="delItem(index)"
       ></li>
       <li class="hz-u-square hz-u-square-tl" data-pointer="dealTL"></li>
       <li class="hz-u-square hz-u-square-tc" data-pointer="dealTC"></li>
