@@ -57,6 +57,7 @@ export default {
     },
     addItem (setting) {
       this.zones.push(setting)
+      this.$emit('choose')
       // this.hasChange()  不应该发送通知，mouseup判定成功才应该发
       // this.$emit('add', setting)
     },
@@ -103,6 +104,8 @@ export default {
 
 <style scoped>
 @import '../assets/styles/main.css';
+
+
 
 
 
